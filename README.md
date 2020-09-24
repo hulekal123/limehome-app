@@ -52,6 +52,8 @@ Now you have the create React App-app running in http://localhost:3000/ and the 
 
 ## Deployment on Heroku platform
 
+The web application can be accessed from [HERE](https://limehome-app.herokuapp.com/)
+
 Here are commands to deploy the app on Heroku platform
 ```
 heroku create <name-for-your-app>
@@ -61,4 +63,6 @@ git push heroku master
 ```
 Now you have the software running in https://name-for-your-app.herokuapps.com/. 
 It is running in production mode. Open your browser and check the logs with heroku logs.
+
+:rocket:
 
