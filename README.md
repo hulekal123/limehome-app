@@ -1,57 +1,64 @@
-Application that shows hotels near a specific location on map with React as frontend,Express API and Mongo as 
-backends and Heroku deployments.
+# Limehome Hotel App
+
+**Limehome Hotel App** is a web application, that displays Hotels located near a selected area on a map. The application is developed with several frameworks such as *React* for Frontend, *Express API* and *MongoDB* for Backend and deployed on Heroku platform.
 
 
-### What is included
-NPM scripts for local development and Heroku deployments<br />
-React App in folder client<br />
-Express API backend with mongo db in backend folder<br />
-HTTPS only when deployed to Heroku<br />
+## What is included
+* *npm* scripts for local development and *Heroku* deployments
+* *React App* in folder client
+* *Express API* with *MongoDB* in backend folder
+* HTTPS only when deployed to Heroku
 
-### Design Points
-A combo of two npm projects, the backend server and the frontend UI. So there are two package.json configs and thereforce two places to run npm commands:
+## Design Consideration
+Web application consitutes combination of two npm projects : the Backend server and the Frontend UI. 
+There are two *package.json* configurations provided and hence two places to run npm commands:
 
-Node server: backend/package.json<br />
+```
+Node server: backend/package.json
 React UI: client/package.json
+```
 
+## Local Development Setup
 
-### Local Development
-git clone https://github.com/hulekal123/limehome-app.git
+Checkout latest code 
+
+`git clone https://github.com/hulekal123/limehome-app.git`
 
 npm command has to be run at two places 
 
-### Run the API server
-In a terminal:
+**Run the API server**
 
-cd backend
+Fire-up a terminal and execute following commands :
+```
+cd backend  #navigate to backend component of solution
+npm install #initial setup
+npm start   #start the server
+```
 
-#### Initial setup
-npm install
+**Run the React UI**
 
-#### Start the server
-npm start
-
-
-### Run the React UI
 The React app is configured to proxy backend requests to the local Node server
 
 In a separate terminal from the API server, start the UI:
 
-cd client/
+```
+cd client  #navigate to Frontend component of solution
+npm install #initial setup
+npm start   #start the server
+```
 
-#### Initial setup
-npm install
-
-#### Start the server
-npm start
-
-
-Now you have the Create React App -app running in http://localhost:3000/ and the API server running in http://localhost:3080.
+Now you have the create React App-app running in http://localhost:3000/ and the API server running in http://localhost:3080.
 
 
-### Heroku deployments
-heroku create name-for-your-app<br />
-heroku addons:create mongolab:sandbox<br />
-heroku git:remote name-for-your-app<br />
-git push heroku master<br />
-Now you have the software running in https://name-for-your-app.herokuapps.com/. It is running in production mode. Open your browser and check the logs with heroku logs.
+## Deployment on Heroku platform
+
+Here are commands to deploy the app on Heroku platform
+```
+heroku create <name-for-your-app>
+heroku addons:create mongolab:sandbox
+heroku git:remote name-for-your-app
+git push heroku master
+```
+Now you have the software running in https://name-for-your-app.herokuapps.com/. 
+It is running in production mode. Open your browser and check the logs with heroku logs.
+
