@@ -1,4 +1,4 @@
-# Limehome Hotel App ![Image of Yaktocat](client/src/icon/limehome_logo.svg)
+# Limehome Hotel App ![Limehome](client/src/icon/limehome_logo.svg)
 
 **Limehome Hotel App** is a web application, that displays Hotels located near a selected area on a map. The application is developed with several frameworks such as *React* for Frontend, *Express API* and *MongoDB* for Backend and deployed on Heroku platform.
 
