@@ -10,17 +10,11 @@
     "node": "10.16.0",
     "npm": "6.x.x"
   },
-  "dependencies": {
-    "concurrently": "^4.0.1",
-    "rimraf": "^2.6.2"
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   },
   "scripts": {
-    "postinstall":
-    "npm --prefix client install && npm --prefix backend install",
-    "start:dev":
-    "concurrently 'npm run --prefix client start' 'npm run --prefix backend start'",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "start": "concurrently \"cd client && PORT=3000 npm run start\" \"cd backend && PORT=3080 npm run start\"",
     "start:prod": "cd backend && NODE_ENV=production node server.js"
   },
   "cacheDirectories": [
