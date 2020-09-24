@@ -47,8 +47,24 @@ npm install #initial setup
 npm start   #start the server
 ```
 
+
 Now you have the create React App-app running in http://localhost:3000/ and the API server running in http://localhost:3080.
 
+**testing**
+
+You can test following three endpoints.
+|*METHOD* | *Endpoint*|
+|---------|-----------|
+| GET   |/api/properties|
+|GET  |/api/<BookingId>/bookings|
+| POST | /api/bookings (with payload)
+
+You may have to execute following commands
+
+```
+cd client  #navigate to Frontend component of solution
+npm test   # executes test 
+```
 
 ## Deployment on Heroku platform
 
