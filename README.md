@@ -50,7 +50,7 @@ npm start   #start the server
 
 Now you have the create React App-app running in http://localhost:3000/ and the API server running in http://localhost:3080.
 
-**testing**
+**Testing**
 
 You can test following three endpoints.
 |*METHOD* | *Endpoint*|
